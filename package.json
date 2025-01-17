@@ -1,0 +1,16 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "**Author:** Kamdem Fotso Rooney  \r **Email:** rooney.kamdem@student.vinci.be  \r **GitHub URL:** https://github.com/Rooney-20/IPL-social.git",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^5.5.0"
+  }
+}
