@@ -30,5 +30,12 @@ describe("Password Checker", () => {
         expect(password).toBe(false);
     });
 
+    it("should return false if password contains 'IPL' in any case", () => {
+        const password = main.doesNotContainIPL("1234IPL!");
+        expect(password).toBe(false);
+        const password2 = main.doesNotContainIPL("1234ipl!");
+        expect(password2).toBe(false);
+    });
+
     
 });

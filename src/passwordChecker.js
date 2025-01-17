@@ -16,5 +16,9 @@ export class Main {
         return /\d/.test(password);
     }
 
+    doesNotContainIPL(password) {
+        return !/ipl/i.test(password);
+    }
+
 
 }
