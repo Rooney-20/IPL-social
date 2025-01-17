@@ -8,4 +8,24 @@ export class Main {
         return true;
     }
 
+    hasSpecialCharacter(password) {
+        return /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    }
+
+    hasDigit(password) {
+        return /\d/.test(password);
+    }
+
+    doesNotContainIPL(password) {
+        return !/ipl/i.test(password);
+    }
+
+    passwordValidChecker(password) {
+        return this.passwordlengthChecker(password) &&
+               this.hasSpecialCharacter(password) &&
+               this.hasDigit(password) &&
+               this.doesNotContainIPL(password);
+    }
+
+
 }
