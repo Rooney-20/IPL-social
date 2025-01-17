@@ -20,5 +20,12 @@ export class Main {
         return !/ipl/i.test(password);
     }
 
+    passwordValidChecker(password) {
+        return this.passwordlengthChecker(password) &&
+               this.hasSpecialCharacter(password) &&
+               this.hasDigit(password) &&
+               this.doesNotContainIPL(password);
+    }
+
 
 }

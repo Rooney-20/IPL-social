@@ -37,5 +37,10 @@ describe("Password Checker", () => {
         expect(password2).toBe(false);
     });
 
+    it("should return true for a valid password", () => {
+        const password = main.passwordValidChecker("Valide1!");
+        expect(password).toBe(true);
+    });
+
     
 });
