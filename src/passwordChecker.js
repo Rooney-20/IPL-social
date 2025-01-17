@@ -8,4 +8,9 @@ export class Main {
         return true;
     }
 
+    hasSpecialCharacter(password) {
+        return /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    }
+
+
 }
