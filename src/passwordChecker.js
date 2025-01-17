@@ -12,5 +12,9 @@ export class Main {
         return /[!@#$%^&*(),.?":{}|<>]/.test(password);
     }
 
+    hasDigit(password) {
+        return /\d/.test(password);
+    }
+
 
 }

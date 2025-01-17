@@ -25,5 +25,10 @@ describe("Password Checker", () => {
         expect(password).toBe(false);
     });
 
+    it("should return false if password does not contain a digit", () => {
+        const password = main.hasDigit("abcdefgh");
+        expect(password).toBe(false);
+    });
+
     
 });
